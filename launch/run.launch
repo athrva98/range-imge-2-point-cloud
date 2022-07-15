@@ -1,0 +1,6 @@
+<launch>
+	<param name="/use_sim_time" value="true"/>
+	<remap from="/tf" to="/os_node/redundant/tf" />
+	<node name="depthmap2cloud" pkg="testing" type="depthmap2cloud" output="screen"/>
+		
+</launch>

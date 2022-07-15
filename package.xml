@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>testing</name>
+    <version>2.0.1</version>
+    <description>Converts a Panoramic Depth image to a point cloud.</description>
+
+    <maintainer email="athrva@seas.upenn.edu">Athrva Pandhare</maintainer>
+    <author email="athrva@seas.upenn.edu">Athrva Pandhare</author>
+    <author>Athrva Pandhare</author>
+
+	<license>BSD</license>
+
+
+    <depend>cv_bridge</depend>
+	<depend>image_transport</depend>
+	<depend>std_msgs</depend>
+    <depend>roscpp</depend>
+    <depend>sensor_msgs</depend>
+    <depend>tf2</depend>
+    <depend>tf2_ros</depend>
+    <depend>tf2_sensor_msgs</depend>
+	<depend>pcl_conversions</depend>
+	<depend>pcl_ros</depend>
+	<depend>tf2_geometry_msgs</depend>
+
+	<buildtool_depend>catkin</buildtool_depend>
+
+    <export>
+        <build_type>catkin</build_type>
+    </export>
+</package>

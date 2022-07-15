@@ -1,0 +1,13 @@
+digraph G {
+"os_sensor" -> "os_imu"[label="Broadcaster: /play_1653282742201407313\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1647976199.573 sec old)\nBuffer length: 0.000 sec\n"];
+"os_sensor" -> "os_lidar"[label="Broadcaster: /play_1653282742201407313\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1647976199.573 sec old)\nBuffer length: 0.000 sec\n"];
+"odom" -> "pano"[label="Broadcaster: /play_1653282742201407313\nAverage rate: 10.204 Hz\nMost recent transform: 1645457350.702 ( 2518848.871 sec old)\nBuffer length: 4.900 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1647976199.573"[ shape=plaintext ] ;
+ }->"os_sensor";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1647976199.573"[ shape=plaintext ] ;
+ }->"odom";
+}
